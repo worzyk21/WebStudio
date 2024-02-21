@@ -1,0 +1,215 @@
+body.show-modal .backdrop {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+  }
+  
+  body.show-modal .modal {
+    transform: scale(1);
+  }
+  
+  .backdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+  }
+  
+  .modal {
+    padding: 40px;
+    border-radius: 4px;
+    max-width: 528px;
+    width: 100%;
+    min-height: 581px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  
+    transform: scale(1.1);
+    transition: transform 200ms ease-in-out;
+  }
+  
+  .modal-title {
+    display: flex;
+    margin-bottom: 12px;
+    color: #212121;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+  }
+  
+  .modal-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    right: 8px;
+    top: 8px;
+    padding: 5px;
+  
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .modal-btn:hover,
+  .modal-btn:focus {
+    fill: #2196f3;
+    border-color: #2196f3;
+  }
+  
+  .modal-icon-close {
+    width: 11px;
+    height: 11px;
+  }
+  
+  .modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  
+    margin-bottom: 20px;
+  }
+  
+  .form-fiel {}
+  
+  .modal-position {
+    position: relative;
+  }
+  
+  .form-label {
+    display: flex;
+    margin-bottom: 4px;
+    color: #757575;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12px;
+  }
+  
+  .form-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 43px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .form-input:focus-within {
+    border-color: #2196f3;
+  }
+  
+  .modal-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+  
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .modal-position:focus-within .modal-icon {
+    fill: #2196f3;
+  }
+  
+  .feedback {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    border-radius: 4px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: none;
+  
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .feedback:focus-within {
+    border: 1px solid #2196f3;
+  }
+  
+  .feedback::placeholder {
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+  
+    color: rgba(117, 117, 117, 0.5);
+  }
+  
+  .checkbox-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-checkbox {
+    width: 16px;
+    height: 15px;
+    cursor: pointer;
+  }
+  
+  .form-text {
+    color: #757575;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+  
+    margin-left: 8px;
+  }
+  
+  .form-text-style {
+    cursor: pointer;
+    color: #2196f3;
+  
+    text-decoration-line: underline;
+  }
+  
+  .modal-button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 52px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+    border-radius: 4px;
+    background: #2196f3;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .modal-button:hover,
+  .modal-button:focus {
+    color: #2196f3;
+    background-color: #fff;
+  }

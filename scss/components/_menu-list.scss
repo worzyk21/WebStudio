@@ -1,0 +1,23 @@
+.menu-list {
+    display: flex;
+    margin-left: 93px;
+  
+    &__item {
+      margin-left: 50px;
+    }
+  
+    &__menu-link {
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+  
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+  
+      color: #212121;
+    }
+  }
+  
